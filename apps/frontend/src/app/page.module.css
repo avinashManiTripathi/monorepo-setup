@@ -1,0 +1,125 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.title {
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+
+.title .highlight {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 400px;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #667eea;
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin-top: 3rem;
+}
+
+.gridCard {
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.gridCard:hover,
+.gridCard:focus,
+.gridCard:active {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ffd700;
+  transform: translateY(-5px);
+}
+
+.gridCard h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.gridCard p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    min-width: auto;
+    width: 90%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
